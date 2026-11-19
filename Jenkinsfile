@@ -1,5 +1,7 @@
 pipeline {
-  agent any
+  agent { 
+    lable 'k8s-master'   
+  }
 
   options {
     timestamps()
