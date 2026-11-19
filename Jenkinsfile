@@ -8,7 +8,7 @@ pipeline {
   }
 
   environment {
-    DOCKERUSER = "<dockeruser>"
+    DOCKERUSER = "ambuj2k19"
     TAG        = "${env.BUILD_NUMBER}"
     DEV_HOST   = "app-dev.local.lab"
     PROD_HOST  = "app.local.lab"
