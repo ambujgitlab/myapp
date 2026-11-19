@@ -1,6 +1,6 @@
 pipeline {
   agent { 
-    lable 'k8s-master'   
+    label 'k8s-master'   
   }
 
   options {
