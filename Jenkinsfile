@@ -1,5 +1,5 @@
 pipeline {
-  agent master.tg.com
+  agent any
 
   options {
     timestamps()
