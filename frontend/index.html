@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>My K8s App</title></head>
+<body style="font-family:sans-serif;text-align:center;margin-top:80px">
+  <h1>CI/CD on On-Prem Kubernetes</h1>
+  <h2 id="out">Loading...</h2>
+  <script>
+    fetch("/api/visits")
+      .then(r => r.json())
+      .then(d => document.getElementById("out").innerText =
+        "Visits: " + d.visits + " | Backend version: " + d.version)
+      .catch(() => document.getElementById("out").innerText = "Backend unreachable");
+  </script>
+</body>
+</html>
